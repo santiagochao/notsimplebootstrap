@@ -6,13 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
      <link rel="stylesheet" href="../css/style.css">
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
 
     <title>Not Simple!</title>
   </head>
   <body>
+    <header>
+    <!-- Inicia nav -->
+    <div>
+         <p class="text-center">
+          30% de descuento en tu segunda compra
+         </p>
+    </div>
    <!-- inicia nav -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <nav class="navbar navbar-expand-lg navbar-light bg-green">
   <div class="container-fluid">
     <a class="navbar-brand" href="#"><img src="../img/logonot.svg" alt="" class="w-50"></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -77,31 +84,31 @@
    <!-- inicia productos -->
   <section class="py-3">
     <div class="container-fluid">
-      <h1  class="text-lg-center text-warning">Nuestros Productos</h1>
+      <h1  class="text-lg-center text-warning bg-green">Nuestros Productos</h1>
       <div class="row">
         <article class="col-sm-12 col-md-6 col-lg-3">
-          <img src="../img/producto1.png" alt="" class="w-100">
-          <h2 class="text-md-center">zapatillas Nike</h2>
+          <img src="../img/producto1.png" alt="" class="w-100 scale">
+          <h2 class="text-md-center wow bounceIn">zapatillas Nike</h2>
           <p>Zapatillas importadas de la mehor calidad</p>
-          <button type="button" class="btn btn-success text-warning">Comprar</button>
+          <button type="button" class="bg-green text-white">Comprar</button>
         </article>
          <article class="col-sm-12 col-md-6 col-lg-3">
-          <img src="../img/producto2.png" alt="" class="w-100">
-          <h2 class="text-md-center">zapatillas Nike</h2>
+          <img src="../img/producto2.png" alt="" class="w-100 scale">
+          <h2 class="text-md-center wow bounceIn">zapatillas Nike</h2>
           <p>Zapatillas importadas de la mehor calidad</p>
-          <button type="button" class="btn btn-success text-warning">Comprar</button>
+          <button type="button" class="bg-green text-white">Comprar</button>
         </article>
          <article class="col-sm-12 col-md-6 col-lg-3">
-          <img src="../img/producto3.png" alt="" class="w-100">
-          <h2 class="text-md-center">zapatillas Nike</h2>
+          <img src="../img/producto3.png" alt="" class="w-100 scale">
+          <h2 class="text-md-center wow bounceIn">zapatillas Nike</h2>
           <p>Zapatillas importadas de la mehor calidad</p>
-          <button type="button" class="btn btn-success text-warning">Comprar</button>
+          <button type="button" class="bg-green text-white">Comprar</button>
         </article>
          <article class="col-sm-12 col-md-6 col-lg-3">
-          <img src="../img/producto4.png" alt="" class="w-100">
-          <h2 class="text-md-center">zapatillas Fila</h2>
+          <img src="../img/producto4.png" alt="" class="w-100 scale">
+          <h2 class="text-md-center wow bounceIn">zapatillas Fila</h2>
           <p>Zapatillas importadas de la mehor calidad</p>
-          <button type="button" class="btn btn-success text-warning">Comprar</button>
+          <button type="button" class="bg-green text-white">Comprar</button>
         </article>
         <!-- termina productos -->
       </div>
@@ -111,7 +118,7 @@
    <!-- empieza formulario -->
   <section class="be-light py-3 container-fluid">
      <article class="col-sm-12 px-3">
-        <h2 class="text-md-center text-warning bg-success">Contactanos</h2>
+        <h2 class="text-md-center text-warning bg-green">Contactanos</h2>
         <form class="row g-3">
       <div class="col-md-6">
         <label for="inputEmail4" class="form-label">Email</label>
@@ -159,17 +166,24 @@
     </article>
  </section>
   <!-- termina formulario -->
+  <!-- Wow.js -->
+<link rel="stylesheet" href="../css/animate.css">
+<script src="../js/wow.min.js"></script>
+              <script>
+              new WOW().init();
+              </script>
+<!-- termina wow.js -->
     <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="../js/bootstrap.min.js" ></script>
 
-  <footer class="bg-success text-center text-white py-3">
-    <h3> Creado por Not Simple</h3>
+  <footer class="bg-green text-center text-white py-3">
+    <h3 class=" wow bounceInLeft"> Creado por Not Simple</h3>
     <div>
       <a href="https://instagram.com" target="blank">
-        <img src="../img/logoinstagram.png" alt="Seguinos en instagram" class="instagram__icon--sm">
+        <img src="../img/logoinstagram.png" alt="Seguinos en instagram" class="instagram__icon--sm wow bounceInUp">
       </a>
       <a href="https://facebook.com" target="blank">
-        <img src="../img/logofacebook.png" alt="Seguinos en facebook"class="footer__icon--sm">
+        <img src="../img/logofacebook.png" alt="Seguinos en facebook"class="footer__icon--sm wow bounceInUp">
       </a>
     </div>
   </footer>
